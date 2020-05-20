@@ -1,4 +1,5 @@
 - hosts: target
+  gather_facts: false
   remote_user: root
   roles:
     - useradd
