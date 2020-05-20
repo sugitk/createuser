@@ -12,5 +12,6 @@
     name: "{{ item.name }}"
     uid: "{{ item.uid }}"
     groups: "{{ item.group }}"
+    state: present
   with_items:
     - "{{ users }}"
