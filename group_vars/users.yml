@@ -1,0 +1,4 @@
+---
+users:
+  - { name: 'a', uid: 123, group: 'x' }
+  - { name: 'b', uid: 124, group: 'x' }

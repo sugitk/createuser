@@ -1,0 +1,3 @@
+---
+user_groups:
+  - { name: 'x', gid: 2000 }

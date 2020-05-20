@@ -1,0 +1,16 @@
+---
+- name: create group
+  group:
+    name: "{{ item.name }}"
+    gid: "{{ item.gid }}"
+    state: present
+  with_items:
+    - "{{ user_groups }}"
+
+- name: create user
+  user:
+    name: "{{ item.name }}"
+    uid: "{{ item.uid }}"
+    groups: "{{ item.group }}"
+  with_items:
+    - "{{ users }}"
